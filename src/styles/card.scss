@@ -1,0 +1,91 @@
+@import "var";
+
+.product-card {
+  height: 403px;
+  width: 200px;
+  border: 1px solid $color_br;
+  border-radius: 5px;
+  padding: 17px 14px 14px;
+  background-color: $color_bg;
+
+  &__img-box {
+    padding: 13px 0 10px;
+    margin: 0 5px 31px;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2);
+      outline: 3px solid $color_br;
+    }
+  }
+
+  &__photo {
+    height: 134px;
+    width: 160px;
+  }
+
+  &__title {
+    margin: 0 0 6px;
+    @include font__size_title;
+    line-height: 15px;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 14px 0 19px;
+  }
+
+  &__price {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+  }
+
+  &__button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 170px;
+    border: 1px solid $color_main;
+    border-radius: 5px;
+    margin-top: 20px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $color_main;
+    color: $color_bg;
+    transition: color 0.5s, background-color 0.5s;
+
+    &:hover {
+      background-color: $color_bg;
+      color: $color_main;
+    }
+  }
+}
+
+.stars {
+  display: flex;
+
+  &__item {
+    @include img-square(15px);
+    margin-right: 4px;
+    background: url("../images/star.svg") no-repeat center;
+  }
+}
+
+@for $i from 1 through 5 {
+  .stars--#{$i} :nth-child(-n+#{$i}) {
+    background-image: url("../images/star-active.svg");
+  }
+}
