@@ -86,12 +86,12 @@ body {
   width: 200px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  padding: 17px 14px 14px;
+  padding: 16px 14px 14px;
   background-color: #fff;
 }
 
 .product-card__img-box {
-  padding: 13px 0 10px;
+  padding: 14px 0 10px;
   margin: 0 5px 31px;
   transition: transform 1s;
 }
