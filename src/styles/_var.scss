@@ -1,16 +1,19 @@
-$font_main: roboto, sans-serif;
-$color_main: #00acdc;
-$color_bg: #fff;
-$color_br: #f3f3f3;
-$color_font: #000;
-$header__height: 60px;
+$fontMain: roboto, sans-serif;
+$colorMain: #00acdc;
+$colorBg: #fff;
+$colorBr: #f3f3f3;
+$colorFont: #000;
+$headerHeight: 60px;
+$productCardWidth: 200px;
+$productCardHeight: 403px;
+$productCardMargin: 48px;
 
-@mixin img-square($size) {
-  height: $size;
+@mixin imgSquare($size) {
   width: $size;
+  height: $size;
 }
 
-@mixin font__size_title {
+@mixin fontSizeTitle {
   font-size: 12px;
   font-weight: 500;
 }

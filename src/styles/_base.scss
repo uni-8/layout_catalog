@@ -1,15 +1,7 @@
 @import "var";
 
 html {
-  font-family: $font_main;
-}
-
-body {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
+  font-family: $fontMain;
 }
 
 .catalog {
@@ -17,7 +9,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  height: 855px;
-  width: 944px;
+  height: $productCardHeight*2 + $productCardMargin + 1px;
+  width: $productCardWidth*4 + $productCardMargin*3;
   margin: 50px auto;
 }
