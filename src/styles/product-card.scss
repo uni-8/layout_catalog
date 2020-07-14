@@ -13,7 +13,7 @@
   background-color: $colorBg;
 
   &__img-box {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin: 0 5px 32px;
