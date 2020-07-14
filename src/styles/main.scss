@@ -1,3 +1,7 @@
-body {
-  margin: 0;
-}
+@use "vars";
+@use "mixins";
+@use "reset";
+@use "header";
+@use "catalog";
+@use "product-card";
+@use "stars";

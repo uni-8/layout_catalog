@@ -1,0 +1,12 @@
+@import "vars";
+@import "mixins";
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: $productCardHeight*2 + $productCardMargin + 1px;
+  width: $productCardWidth*4 + $productCardMargin*3;
+  margin: 50px auto;
+}
