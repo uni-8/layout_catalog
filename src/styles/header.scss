@@ -34,6 +34,7 @@
     @include fontSizeTitle;
     text-transform: uppercase;
     color: $colorFont;
+    transition: color 0.3s;
 
     &:hover,
     &--is-active {
