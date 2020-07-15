@@ -30,10 +30,12 @@
   }
 
   &__link {
-    display: block;
-    position: relative;
-    line-height: $headerHeight;
     @include fontSizeTitle;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: $headerHeight;
+    line-height: 14px;
     text-transform: uppercase;
     color: $colorFont;
     transition: color 0.3s;
