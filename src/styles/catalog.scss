@@ -3,10 +3,10 @@
 
 .catalog {
   display: grid;
-  max-width: 4 * $productCardWidth + 3 * $productCardMargin;
   grid-template-columns: repeat(auto-fill, $productCardWidth);
   grid-column-gap: $productCardMargin;
   grid-row-gap: $productCardMargin + 1px;
+  max-width: 4 * $productCardWidth + 3 * $productCardMargin;
   justify-content: center;
   align-content: center;
   margin: 50px auto;

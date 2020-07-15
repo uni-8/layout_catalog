@@ -81,10 +81,10 @@ a {
 
 .catalog {
   display: grid;
-  max-width: 944px;
   grid-template-columns: repeat(auto-fill, 200px);
   grid-column-gap: 48px;
   grid-row-gap: 49px;
+  max-width: 944px;
   justify-content: center;
   align-content: center;
   margin: 50px auto;
