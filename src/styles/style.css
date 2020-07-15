@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 }
 
-Ul {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -21,8 +21,8 @@ a {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
   align-items: center;
   padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -32,6 +32,10 @@ a {
 .logo {
   width: 40px;
   height: 40px;
+}
+
+.menu {
+  justify-self: end;
 }
 
 .menu__list {
@@ -47,9 +51,11 @@ a {
 }
 
 .menu__link {
-  display: block;
   position: relative;
-  line-height: 60px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  line-height: 14px;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -74,12 +80,13 @@ a {
 }
 
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  height: 855px;
-  width: 944px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-column-gap: 48px;
+  grid-row-gap: 49px;
+  max-width: 944px;
+  justify-content: center;
+  align-content: center;
   margin: 50px auto;
 }
 
@@ -96,7 +103,7 @@ a {
 }
 
 .product-card__img-box {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   margin: 0 5px 32px;
